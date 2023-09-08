@@ -26,50 +26,37 @@ h2 {
     text-align: center;
 }
 
-/* Description Section */
+/* General Section Styles */
 
-#description {
-    margin: 20px;
+section {
+    background-color: white;
+    margin: 40px;
     padding: 20px;
-    background: #fff;
+    border: 1px solid #ccc;
 }
 
-/* Services Section */
+/* List items within Sections */
 
-#services {
-    margin: 20px;
-    padding: 20px;
-    background: #fff;
-}
-
-/* List items within Services */
-
-#services ul {
-    list-style: none;
-}
-
-#services ul li {
-    background: #eee;
-    margin: 5px;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Contact Information Section */
-
-#contact {
-    margin: 20px;
-    padding: 20px;
-    background: #fff;
-}
-
-#contact ul {
-    list-style: none;
+ul {
+    list-style: disc inside;
 }
 
 #contact ul li {
-    background: #eee;
+    list-style: none;
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+}
+
+ul li {
     margin: 5px;
     padding: 10px;
-    text-align: center;
+    text-align: left;
+}
+
+#free-resources ul li a, #blog ul li a {
+    color: inherit;
+    text-align: left;
 }
