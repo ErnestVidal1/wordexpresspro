@@ -2,38 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WordExpressPro - Professional Word Formatting Services</title>
+    <title id="page-title">WordExpressPro - Professional Word Formatting Services</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>WordExpressPro</h1>
-        <p>Professional Word Formatting Services</p>
+        <h1 id="header-title">WordExpressPro</h1>
+        <p id="header-subtitle">Professional Word Formatting Services</p>
+        <div id="language-selector">
+            <button onclick="setLanguage('en')">English</button>
+            <button onclick="setLanguage('es')">Español</button>
+			<button onclick="setLanguage('ca')">Català</button>
+        </div>
     </header>
 
     <section id="description">
-        <h2>Description</h2>
-        <p>Welcome to WordExpressPro, your go-to destination for Professional Word Formatting Services. Here you can find all the details about the services I offer, including Custom Word Template Design, Professional Word Layouts, and Efficient PDF to Word Conversion.</p>
+        <h2 id="description-title">Description</h2>
+        <p id="description-text">Welcome to WordExpressPro, your go-to destination for Professional Word Formatting Services. Here you can find all the details about the services I offer, including Custom Word Template Design, Professional Word Layouts, and Efficient PDF to Word Conversion.</p>
     </section>
 
     <section id="services">
-        <h2>Services Offered</h2>
-        <ul>
-            <li>Custom Word Template Design: Create custom Word templates tailored to your needs.</li>
-            <li>Professional Word Layouts: Layout services to make your Word documents look professional and polished.</li>
-            <li>Efficient PDF to Word Conversion: Quick and reliable conversion from PDF to Word format.</li>
+        <h2 id="services-title">Services Offered</h2>
+        <ul id="services-list">
+            <li id="service-1">Custom Word Template Design: Create custom Word templates tailored to your needs.</li>
+            <li id="service-2">Professional Word Layouts: Layout services to make your Word documents look professional and polished.</li>
+            <li id="service-3">Efficient PDF to Word Conversion: Quick and reliable conversion from PDF to Word format.</li>
         </ul>
     </section>
 
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>For more information or to avail any of these services, you can reach out to me at:</p>
+    <section id="free-resources">
+        <h2 id="resources-title">Free Resources</h2>
         <ul>
-            <li>Email: <a href="mailto:ernestvidal1@gmail.com">ernestvidal1@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/ernest-vidal-clavé/" target="_blank">https://www.linkedin.com/in/ernest-vidal-clavé/</a></li>
+            <li><a href="free-resources/checklist_briefing_plantilla.pdf" id="resource-1">Checklist: Creative Briefing for Word Template Design (Available only in Spanish)</a></li>
+            <li><a href="free-resources/checklist_plan_maquetacion.pdf" id="resource-2">Checklist: Word Layout Planning (Available only in Spanish)</a></li>
+            <li><a href="free-resources/checklist_conversion_PDF_a_Word.pdf" id="resource-3">Checklist: PDF to Word Conversion (Available only in Spanish)</a></li>
         </ul>
     </section>
+
+    <section id="blog">
+        <h2 id="blog-title">Blog</h2>
+        <p id="blog-text">Writing here... Stay tuned for updates!</p>
+    </section>
+
+    <section id="about-me">
+        <h2 id="about-title">About Me</h2>
+        <p id="about-text">My name is Ernest Vidal. I am an experienced Editor and Layout Designer specializing in Microsoft Word for individual clients and businesses, as well as XML DocBook for academic manuals at the UOC (Open University of Catalonia). I harness the power of technologies like VBA, Python, JAVA, XSLT, AcroJS, and AHK to automate editorial workflows and optimize processes.</p>
+    </section>
+
+    <section id="contact">
+        <h2 id="contact-title">Contact Information</h2>
+        <p id="contact-text">For more information or to avail any of these services, you can reach out to me at:</p>
+        <ul>
+            <li>Email: <a href="mailto:ernest@wordexpresspro.com" id="contact-email">ernest@wordexpresspro.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/ernest-vidal-clavé/" target="_blank" id="contact-linkedin">https://www.linkedin.com/in/ernest-vidal-clavé/</a></li>
+        </ul>
+    </section>
+
+    <script>
+        const translations = {
+            'es': {
+                'page-title': 'WordExpressPro - Serveis Professionals de Maquetació en Word',
+                'header-title': 'WordExpressPro',
+                'header-subtitle': 'Servicios Profesionales de Formato en Word',
+                'description-title': 'Descripción',
+                'description-text': 'Bienvenido a WordExpressPro, tu destino preferido para servicios profesionales de formato en Word. Aquí puedes encontrar todos los detalles sobre los servicios que ofrezco, incluido el diseño de plantillas de Word personalizadas, diseños de Word profesionales y conversión eficiente de PDF a Word.',
+                'services-title': 'Servicios Ofrecidos',
+                'service-1': 'Diseño de Plantillas de Word Personalizadas: Crea plantillas de Word adaptadas a tus necesidades.',
+                'service-2': 'Diseños de Word Profesionales: Servicios de diseño para que tus documentos de Word se vean profesionales y pulidos.',
+                'service-3': 'Conversión Eficiente de PDF a Word: Conversión rápida y fiable de formato PDF a Word.',
+                'resources-title': 'Recursos Gratuitos',
+                'resource-1': 'Lista de verificación: Briefing creativo para el diseño de plantillas de Word (disponible solo en español)',
+                'resource-2': 'Lista de verificación: Planificación de diseño de Word (disponible solo en español)',
+                'resource-3': 'Lista de verificación: Conversión de PDF a Word (disponible solo en español)',
+                'blog-title': 'Blog',
+                'blog-text': 'Escribiendo aquí... ¡Estén atentos para las actualizaciones!',
+                'about-title': 'Acerca de mí',
+                'about-text': 'Mi nombre es Ernest Vidal. Soy un editor y diseñador de diseño experimentado que se especializa en Microsoft Word para clientes individuales y empresas, así como en XML DocBook para manuales académicos en la UOC (Universidad Abierta de Cataluña). Utilizo el poder de tecnologías como VBA, Python, JAVA, XSLT, AcroJS y AHK para automatizar flujos de trabajo editoriales y optimizar procesos.',
+                'contact-title': 'Información de Contacto',
+                'contact-text': 'Para más información o para aprovechar cualquiera de estos servicios, puedes contactarme en:',
+                'contact-email': 'ernest@wordexpresspro.com',
+                'contact-linkedin': 'https://www.linkedin.com/in/ernest-vidal-clavé/'
+            },
+            'en': {
+                'page-title': 'WordExpressPro - Professional Word Formatting Services',
+                'header-title': 'WordExpressPro',
+                'header-subtitle': 'Professional Word Formatting Services',
+                'description-title': 'Description',
+                'description-text': 'Welcome to WordExpressPro, your go-to destination for Professional Word Formatting Services. Here you can find all the details about the services I offer, including Custom Word Template Design, Professional Word Layouts, and Efficient PDF to Word Conversion.',
+                'services-title': 'Services Offered',
+                'service-1': 'Custom Word Template Design: Create custom Word templates tailored to your needs.',
+                'service-2': 'Professional Word Layouts: Layout services to make your Word documents look professional and polished.',
+                'service-3': 'Efficient PDF to Word Conversion: Quick and reliable conversion from PDF to Word format.',
+                'resources-title': 'Free Resources',
+                'resource-1': 'Checklist: Creative Briefing for Word Template Design (Available only in Spanish)',
+                'resource-2': 'Checklist: Word Layout Planning (Available only in Spanish)',
+                'resource-3': 'Checklist: PDF to Word Conversion (Available only in Spanish)',
+                'blog-title': 'Blog',
+                'blog-text': 'Writing here... Stay tuned for updates!',
+                'about-title': 'About Me',
+                'about-text': 'My name is Ernest Vidal. I am an experienced Editor and Layout Designer specializing in Microsoft Word for individual clients and businesses, as well as XML DocBook for academic manuals at the UOC (Open University of Catalonia). I harness the power of technologies like VBA, Python, JAVA, XSLT, AcroJS, and AHK to automate editorial workflows and optimize processes.',
+                'contact-title': 'Contact Information',
+                'contact-text': 'For more information or to avail any of these services, you can reach out to me at:',
+                'contact-email': 'ernest@wordexpresspro.com',
+                'contact-linkedin': 'https://www.linkedin.com/in/ernest-vidal-clavé/'
+            },	
+			'ca': {
+				'page-title': 'WordExpressPro - Serveis Professionals de Formatació de Documents Word',
+				'header-title': 'WordExpressPro',
+				'header-subtitle': 'Serveis Professionals de Formatació de Documents Word',
+				'description-title': 'Descripció',
+				'description-text': 'Benvinguts a WordExpressPro, el vostre destí preferit per als Serveis Professionals de Formatació de Documents Word. Aquí podeu trobar tots els detalls sobre els serveis que oferim, incloent el Disseny Personalitzat de Plantilles Word, la Formatació Professional de Documents Word i una Conversió Eficient de PDF a Word.',
+				'services-title': 'Serveis Oferts',
+				'service-1': 'Disseny Personalitzat de Plantilles Word: Creeu plantilles Word personalitzades adaptades a les vostres necessitats.',
+				'service-2': 'Formatació Professional de Documents Word: Serveis de formatació per fer que els vostres documents Word tinguin una aparença professional i pulida.',
+				'service-3': 'Conversió Eficient de PDF a Word: Conversió ràpida i fiable de PDF a format Word.',
+				'resources-title': 'Recursos Gratuits',
+				'resource-1': 'Llista de verificació: Breu Informe Creatiu per al Disseny de Plantilles Word (Només disponible en castellà)',
+				'resource-2': 'Llista de verificació: Planificació de la Formatació Word (Només disponible en castellà)',
+				'resource-3': 'Llista de verificació: Conversió de PDF a Word (Només disponible en castellà)',
+				'blog-title': 'Bloc',
+				'blog-text': 'Escrivim aquí... Estigueu atents a les actualitzacions!',
+				'about-title': 'Sobre Mi',
+				'about-text': 'El meu nom és Ernest Vidal. Sóc un editor i dissenyador de formats amb experiència especialitzat en Microsoft Word per a clients individuals i empreses, així com en XML DocBook per a manuals acadèmics a la UOC (Universitat Oberta de Catalunya). Aprofito el poder de tecnologies com VBA, Python, JAVA, XSLT, AcroJS i AHK per automatitzar fluxos de treball editorials i optimitzar processos.',
+				'contact-title': 'Informació de Contacte',
+				'contact-text': 'Per obtenir més informació o per fer ús de qualsevol dels nostres serveis, podeu contactar amb mi a:',
+				'contact-email': 'ernest@wordexpresspro.com',
+				'contact-linkedin': 'https://www.linkedin.com/in/ernest-vidal-clavé/'
+			}
+        };
+
+        function setLanguage(lang) {
+            for (const [key, value] of Object.entries(translations[lang])) {
+                const element = document.getElementById(key);
+                if (element) {
+                    element.innerHTML = value;
+                }
+            }
+        }
+
+        // Set default language to English
+        setLanguage('en');
+    </script>
 
 </body>
 </html>
