@@ -60,3 +60,12 @@ ul li {
     color: inherit;
     text-align: left;
 }
+
+.blog-resource a {
+    font-weight: bold; /* Hacer la fuente más gruesa */
+    color: #4CAF50; /* Cambiar el color para que resalte más */
+}
+
+.blog-resource a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse para más énfasis */
+}
