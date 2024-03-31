@@ -76,5 +76,7 @@ ul li {
 
 .blog-button:hover {
   background-color: #367a3c; /* Un tono más oscuro para el efecto hover */
-  margin-top: 20px;
+  display: block; /* Esto hará que el enlace se comporte como un bloque */
+  width: fit-content; /* Esto hará que el ancho del botón se ajuste al contenido */
+  margin: 20px auto;
 }
