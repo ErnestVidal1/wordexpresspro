@@ -61,11 +61,6 @@ ul li {
     text-align: left;
 }
 
-.blog-resource a {
-    font-weight: bold; /* Hacer la fuente más gruesa */
-    color: #4CAF50; /* Cambiar el color para que resalte más */
-}
-
 .blog-button {
   display: inline-block;
   padding: 10px 20px;
